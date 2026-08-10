@@ -1039,7 +1039,7 @@ a {
         box-shadow: none;
         transform: translateX(110%);
         opacity: 0;
-            pointer-events: none;
+        pointer-events: none;
             transition: transform 0.35s ease, opacity 0.35s ease;
         z-index: 99;
     }
@@ -1047,7 +1047,7 @@ a {
     .nav-links.open {
         transform: translateX(0);
         opacity: 1;
-            pointer-events: auto;
+        pointer-events: auto;
         }
 
         .nav-mobile-header {
@@ -1126,7 +1126,7 @@ a {
             box-shadow: none;
         cursor: pointer;
         flex-direction: column;
-            gap: 5px;
+        gap: 5px;
         }
 
         .nav-toggle span {
