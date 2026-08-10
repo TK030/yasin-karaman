@@ -1011,7 +1011,7 @@ a {
     .nav-container {
         padding: 10px 16px;
         background: rgba(10, 10, 10, 0.85);
-            border: 1px solid rgba(255, 255, 255, 0.08);
+        border: 1px solid rgba(255, 255, 255, 0.08);
         border-radius: 18px;
         backdrop-filter: blur(12px);
         box-shadow: none;
@@ -1024,18 +1024,18 @@ a {
         .nav-links {
         position: fixed;
         top: 0;
-            right: 0;
-            width: min(86vw, 380px);
+        right: 0;
+        width: 100vw;
             height: 100vh;
         display: flex;
         flex-direction: column;
         align-items: stretch;
         justify-content: flex-start;
-            gap: 8px;
-            padding: 26px 20px 30px;
+        gap: 8px;
+        padding: 26px 22px 30px;
             background: #111111;
-            border-left: 1px solid rgba(255, 255, 255, 0.08);
-            box-shadow: -18px 0 40px rgba(0, 0, 0, 0.45);
+        border-left: none;
+            box-shadow: none;
             border-radius: 0;
             transform: translateX(110%);
             transition: transform 0.35s ease;
@@ -1044,32 +1044,25 @@ a {
 
     .nav-links.open {
         transform: translateX(0);
-        }
-        
-        .nav-mobile-header {
+    .nav-mobile-header {
         display: flex;
         align-items: center;
-            gap: 10px;
-            padding: 6px 2px 18px;
-            margin-bottom: 8px;
+        justify-content: center;
+            padding: 8px 0 18px;
+            margin-bottom: 10px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-            color: var(--text);
-            font-size: 12px;
-            font-weight: 700;
-            letter-spacing: 1.1px;
-        }
-        
-        .nav-mobile-header .logo-img {
-            height: 38px;
+    .nav-mobile-header .logo-img {
+        height: 64px;
+            width: auto;
             filter: brightness(0) invert(1);
     }
 
     .nav-links a {
         width: 100%;
-        font-size: 1.1rem;
+        font-size: 1.15rem;
             font-weight: 500;
         line-height: 1.3;
-            padding: 12px 8px;
+        padding: 12px 8px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.06);
             color: rgba(240, 236, 224, 0.92);
         }
@@ -1093,7 +1086,7 @@ a {
 
     .nav-phone-mobile {
         margin-top: 8px;
-            font-size: 0.95rem;
+        font-size: 0.95rem;
             padding: 13px 16px;
             border: 1px solid rgba(255, 255, 255, 0.12);
             border-radius: 12px;
@@ -1103,7 +1096,7 @@ a {
     .nav-cta-mobile {
         margin-top: 6px;
         padding: 15px 18px;
-            width: 100%;
+        width: 100%;
         border-radius: 12px;
         box-shadow: none;
     }
@@ -1117,16 +1110,17 @@ a {
         z-index: 100;
         width: 50px;
         height: 50px;
-            align-items: center;
+        align-items: center;
             justify-content: center;
         background: rgba(255, 255, 255, 0.02);
         border: 1px solid rgba(255, 255, 255, 0.12);
-            border-radius: 14px;
+        border-radius: 14px;
             box-shadow: none;
         }
         
         .nav-toggle span {
             background: #ffffff;
+    .nav-toggle.open span:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
     }
 
