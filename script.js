@@ -77,29 +77,20 @@ if (homeVideoTrack) {
 
 if (window.AOS && !prefersReducedMotion) {
     revealElements.forEach(element => element.setAttribute('data-aos', 'fade-up'));
-    window.AOS.init({
-        duration: 650,
-        easing: 'ease-out-cubic',
-        once: true,
-        offset: 70
+    window.requestAnimationFrame(() => {
+        window.requestAnimationFrame(() => {
+            window.AOS.init({
+                duration: 800,
+                easing: 'ease-out-cubic',
+                once: true,
+                offset: 70
+            });
+        });
     });
 }
 
 if (window.gsap && window.ScrollTrigger && !prefersReducedMotion) {
     gsap.registerPlugin(ScrollTrigger);
-
-    if (document.querySelector('.hero')) {
-        const heroTimeline = gsap.timeline({ defaults: { ease: 'power3.out' } });
-        heroTimeline
-            .fromTo('.hero-eyebrow', { y: 18, opacity: 0 }, { y: 0, opacity: 1, duration: 0.55 })
-            .fromTo('.hero h1', { y: 28, opacity: 0 }, { y: 0, opacity: 1, duration: 0.75 }, '-=0.25')
-            .fromTo('.hero-copy, .hero-actions, .hero-proof', { y: 16, opacity: 0 }, {
-                y: 0, opacity: 1, duration: 0.55, stagger: 0.12
-            }, '-=0.42')
-            .fromTo('.hero-visual', { x: 38, opacity: 0, rotate: 2 }, {
-                x: 0, opacity: 1, rotate: 0, duration: 0.9
-            }, '-=0.65');
-    }
 
     if (document.querySelector('.note-top')) {
         gsap.to('.note-top', { y: -9, duration: 2.8, ease: 'sine.inOut', repeat: -1, yoyo: true });

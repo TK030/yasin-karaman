@@ -1084,6 +1084,62 @@ body.menu-open .navbar.scrolled {
     transform: rotate(-11deg);
 }
 
+.quick-contact {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 19;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 9px;
+}
+
+.quick-contact-link {
+    display: inline-flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    padding: 0 16px;
+    border-radius: 999px;
+    box-shadow: 0 8px 24px rgba(41, 47, 44, .18);
+    color: var(--white);
+    font-size: 12px;
+    font-weight: 700;
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.quick-contact-link:hover {
+    box-shadow: 0 11px 28px rgba(41, 47, 44, .24);
+    color: var(--white);
+    transform: translateY(-2px);
+}
+
+.quick-contact-link:focus-visible {
+    outline: 3px solid var(--ink);
+    outline-offset: 3px;
+}
+
+.quick-contact-link i {
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.quick-contact-whatsapp {
+    background: #0b8064;
+}
+
+.quick-contact-call {
+    background: var(--blue-dark);
+}
+
+body.menu-open .quick-contact {
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .footer {
     padding: 58px 0 0;
     background: var(--paper);
@@ -1570,6 +1626,22 @@ body.menu-open .navbar.scrolled {
 
     .navbar {
         padding: 11px 0;
+    }
+
+    .quick-contact {
+        right: 14px;
+        bottom: 14px;
+        gap: 8px;
+    }
+
+    .quick-contact-link {
+        min-height: 44px;
+        padding: 0 13px;
+        font-size: 11px;
+    }
+
+    .quick-contact-link i {
+        font-size: 17px;
     }
 
     .nav-container {
