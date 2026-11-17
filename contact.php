@@ -24,7 +24,7 @@ if (empty($name) || empty($phone) || empty($message)) {
 }
 
 // E-mail instellingen
-$to = 'taha2006@live.nl';
+$to = 'Yasin42karaman@gmail.com';
 $subject = 'Yeni İletişim Formu: ' . $name;
 $body = "İsim: $name\nTelefon: $phone\n\nMesaj:\n$message\n\n---\nGönderim tarihi: " . date('d.m.Y H:i');
 $headers = "From: noreply@yasinkaramannakliyat.com\r\n";

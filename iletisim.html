@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Yasin Karaman Nakliyat ile taşınma planınızı konuşun. Ücretsiz fiyat teklifi ve iletişim bilgileri." />
+    <meta name="theme-color" content="#f6f5f2" />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>İletişim ve teklif | Yasin Karaman Nakliyat</title>
+</head>
+
+<body>
+    <header id="navbar" class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo" aria-label="Yasin Karaman Nakliyat ana sayfa"><img src="img/logo.png"
+                    alt="YK Nakliyat" class="logo-img" /></a>
+            <nav class="nav-links" id="navLinks" aria-label="Ana menü">
+                <a href="index.html">Ana sayfa</a><a href="hizmetler.html">Hizmetler</a><a href="hakkimizda.html">Biz
+                    kimiz?</a><a href="index.html#nasil-calisir">Nasıl çalışır?</a><a href="iletisim.html"
+                    aria-current="page">İletişim</a>
+                <a href="tel:+905528848691" class="nav-phone nav-phone-mobile">+90 552 884 86 91</a><a href="#teklif"
+                    class="btn btn-primary nav-cta-mobile">Teklif al <i class="fa-solid fa-arrow-up-right-from-square"
+                        aria-hidden="true"></i></a>
+            </nav>
+            <div class="nav-actions"><a class="nav-phone" href="tel:+905528848691">+90 552 884 86 91</a><a
+                    href="#teklif" class="btn btn-primary nav-cta">Teklif al <span aria-hidden="true"><i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></span></a></div>
+            <button class="nav-toggle" id="navToggle" aria-label="Menüyü aç" aria-expanded="false"
+                aria-controls="navLinks"><i class="fa-solid fa-bars" aria-hidden="true"></i></button>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero">
+            <div class="container reveal"><span class="eyebrow"><span class="eyebrow-dot"></span> İLK ADIM, BİR
+                    MERHABA</span>
+                <h1>Taşınma planınızı<br /><span class="text-blue">konuşalım.</span></h1>
+                <p>Yeni adresinizi, taşınma tarihinizi ya da merak ettiklerinizi paylaşın. Size uygun planı birlikte
+                    oluşturalım.</p>
+            </div>
+        </section>
+        <section class="section">
+            <div class="container contact-grid">
+                <div class="contact-info reveal">
+                    <article class="info-card">
+                        <h2>Doğrudan bize ulaşın</h2><a href="tel:+905528848691" class="info-item"><span
+                                class="info-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-phone"></i></span><span><small>Telefon</small><strong>+90 552 884
+                                    86 91</strong></span></a><a href="mailto:Yasin42karaman@gmail.com"
+                            class="info-item"><span class="info-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-envelope"></i></span><span><small>E-posta</small><strong>Yasin42karaman@gmail.com</strong></span></a>
+                        <div class="info-item"><span class="info-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-location-dot"></i></span><span><small>Hizmet
+                                    alanı</small><strong>Türkiye</strong></span></div>
+                    </article>
+                    <article class="info-card">
+                        <h2>Birlikte planlayalım</h2>
+                        <p class="form-subtitle">Adreslerinizi, taşınma tarihinizi ve eşya miktarınızı konuşarak
+                            ihtiyacınızı netleştirebiliriz.</p>
+                        <div class="social-links"><a href="https://instagram.com/yasinkaraman86" target="_blank"
+                                rel="noopener noreferrer" class="social-link"><i class="fa-brands fa-instagram"
+                                    aria-hidden="true"></i> Instagram <i class="fa-solid fa-arrow-up-right-from-square"
+                                    aria-hidden="true"></i></a><a href="https://facebook.com/yasin.karaman.1650"
+                                target="_blank" rel="noopener noreferrer" class="social-link"><i
+                                    class="fa-brands fa-facebook-f" aria-hidden="true"></i> Facebook <i
+                                    class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a></div>
+                    </article>
+                </div>
+                <div class="contact-form-wrap reveal" id="teklif">
+                    <form id="contactForm" action="contact.php" method="POST" class="contact-form">
+                        <h2>Ücretsiz teklif isteyin</h2>
+                        <p class="form-subtitle">Formu doldurun, en kısa sürede size dönelim.</p>
+                        <div class="form-row">
+                            <div class="form-group"><label for="contactName">Adınız soyadınız</label><input
+                                    id="contactName" type="text" name="name" autocomplete="name"
+                                    placeholder="Adınız Soyadınız" required /></div>
+                            <div class="form-group"><label for="contactPhone">Telefon numaranız</label><input
+                                    id="contactPhone" type="tel" name="phone" autocomplete="tel"
+                                    placeholder="+90 5XX XXX XX XX" required /></div>
+                        </div>
+                        <div class="form-group"><label for="contactMessage">Taşınma ayrıntıları</label><textarea
+                                id="contactMessage" name="message" rows="5"
+                                placeholder="Nereden nereye taşınıyorsunuz, ne zaman? Biraz anlatın..."
+                                required></textarea></div>
+                        <button type="submit" class="btn btn-primary btn-full" id="submitBtn"><span
+                                class="btn-text">Teklif isteyin <span aria-hidden="true"><i
+                                        class="fa-solid fa-arrow-up-right-from-square"></i></span></span><span
+                                class="btn-loader" hidden><i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i>
+                                Gönderiliyor...</span></button>
+                        <div id="formMessage" class="form-message" role="status" hidden></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section faq-section">
+            <div class="container faq-layout">
+                <div class="faq-intro reveal"><span class="eyebrow"><span class="eyebrow-dot"></span> TAŞINMA
+                        HAKKINDA</span>
+                    <h2>İlk birkaç<br /><span class="text-blue">soru.</span></h2>
+                    <p>Başka bir şey merak ediyorsanız bize arayın. Birlikte üzerinden geçelim.</p>
+                </div>
+                <div class="faq-list">
+                    <article class="faq-item reveal"><button class="faq-q" aria-expanded="false">Teklif için hangi
+                            bilgileri paylaşmalıyım?<span class="faq-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-a">
+                            <p>Nereden nereye taşınacağınız, yaklaşık taşınma tarihiniz ve eşya miktarıyla
+                                başlayabiliriz. Bina ve kat bilgileri de planlamaya yardımcı olur.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item reveal"><button class="faq-q" aria-expanded="false">Asansörlü nakliyat
+                            binama uygun olur mu?<span class="faq-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-a">
+                            <p>Bu; binanın yüksekliğine, araç erişimine ve çevre koşullarına bağlıdır. Taşınma öncesi
+                                koşulları konuşup uygun yöntemi birlikte belirleyebiliriz.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item reveal"><button class="faq-q" aria-expanded="false">Şehirler arası taşıma
+                            yapıyor musunuz?<span class="faq-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-a">
+                            <p>Evet. Güzergâhı ve taşınma tarihinizi paylaşın; planınızı görüşmek için sizinle iletişime
+                                geçelim.</p>
+                        </div>
+                    </article>
+                    <article class="faq-item reveal"><button class="faq-q" aria-expanded="false">Taşınma tarihimi
+                            önceden konuşabilir miyim?<span class="faq-icon" aria-hidden="true"><i
+                                    class="fa-solid fa-plus"></i></span></button>
+                        <div class="faq-a">
+                            <p>Elbette. Aklınızdaki tarihi bize iletin; takvim ve hazırlık adımlarını birlikte
+                                konuşalım.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand"><a href="index.html" class="nav-logo"><img src="img/logo.png" alt="YK Nakliyat"
+                        class="logo-img" /><span>YASİN KARAMAN <small>NAKLİYAT</small></span></a>
+                <p>Taşınmak zorunda değil. Güzel olabilir. Eşyalarınızı ve heyecanınızı güvenle taşıyoruz.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Keşfedin</h3><a href="index.html">Ana sayfa</a><a href="hizmetler.html">Hizmetler</a><a
+                    href="hakkimizda.html">Biz kimiz?</a><a href="iletisim.html">İletişim</a>
+            </div>
+            <div class="footer-col">
+                <h3>Hizmetler</h3><a href="hizmetler.html#evden-eve">Evden eve</a><a
+                    href="hizmetler.html#asansorlu">Asansörlü nakliyat</a><a href="hizmetler.html#sehir-ici">Şehir
+                    içi</a><a href="hizmetler.html#sehirler-arasi">Şehirler arası</a>
+            </div>
+            <div class="footer-col">
+                <h3>Merhaba deyin</h3><a href="tel:+905528848691">+90 552 884 86 91</a><a
+                    href="mailto:Yasin42karaman@gmail.com">Yasin42karaman@gmail.com</a>
+            </div>
+        </div>
+        <div class="container footer-bottom"><span>© <span id="year"></span> Yasin Karaman Nakliyat</span><span
+                class="footer-credit">Web sitesi <a href="https://www.tkwebstudio.nl/" target="_blank"
+                    rel="noopener noreferrer">TKwebstudio</a> tarafından hazırlanmıştır.</span><span>Özenle,
+                yola çıktık. <i class="fa-solid fa-star" aria-hidden="true"></i></span></div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" defer></script>
+    <script src="script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "devDependencies": {
+    "vite": "latest",
+    "vitest": "latest"
+  },
+  "scripts": {
+    "test": "vitest run"
+  }
+}
